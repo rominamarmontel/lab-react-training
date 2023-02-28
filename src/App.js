@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
-import IdCard from './components/IdCard';
+import IdCard from './components/IdCard/IdCard';
+import Greetings from './components/Greetings/Greetings';
 
 const usersArray = [
   {
@@ -20,6 +21,13 @@ const usersArray = [
     picture: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
 ];
+
+// const Greetings = [
+//   {
+//     lang: ["de", "en", "es", "fr"],
+//     children: String,
+//   }
+// ]
 
 function App() {
   return (

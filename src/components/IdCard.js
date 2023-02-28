@@ -25,7 +25,7 @@ const IdCard = ({ id }) => {
           </p>
           <p class="birth">
             <span>Birth: </span>
-            {id.birth.toString()}
+            {id.birth.toDateString()}
           </p>
         </div>
       </div>

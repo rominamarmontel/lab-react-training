@@ -1,6 +1,11 @@
 .IdCard {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 .IdCard .container {
   display: flex;
@@ -10,13 +15,6 @@
 .IdCard img {
   width: 8rem;
   height: 8rem;
-}
-.IdCard .card {
-  border: 1px solid black;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin: .5rem;
 }
 .IdCard p {
   margin: 0;

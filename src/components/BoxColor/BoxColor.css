@@ -1,0 +1,10 @@
+.boxcolor {
+  height: 100px;
+  width: 400px;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

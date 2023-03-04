@@ -1,0 +1,38 @@
+.creditCard-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.creditCard {
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  padding: 1rem;
+}
+.creditCard .container {
+  display: flex;
+  flex-direction: column;
+}
+.cardType {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.cardType img {
+  width: 30px;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.expires {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: .5rem;
+}
+.creditCard .ownerName p {
+  font-size: .5rem;
+}

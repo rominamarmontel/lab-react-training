@@ -1,33 +1,17 @@
 import React from 'react';
 import './IdCard.css';
 
-const IdCard = ({ id }) => {
+const IdCard = (props) => {
+  const { lastName, firstName, gender, height, birth, picture } = props;
   return (
-    <div class="IdCard">
-      <div class="card">
-        <img src={id.picture} alt="" />
-        <div class="container">
-          <p class="lastName">
-            <span>Last name: </span>
-            {id.lastName}
-          </p>
-          <p class="firstName">
-            <span>First name: </span>
-            {id.firstName}
-          </p>
-          <p class="gender">
-            <span>Gender: </span>
-            {id.gender}
-          </p>
-          <p class="height">
-            <span>Height: </span>
-            {id.height}
-          </p>
-          <p class="birth">
-            <span>Birth: </span>
-            {id.birth.toDateString()}
-          </p>
-        </div>
+    <div className="IdCard">
+      <img src={picture} alt="" />
+      <div className="container">
+        <p>Last Name: {lastName}</p>
+        <p>First Name: {firstName}</p>
+        <p>Gender: {gender}</p>
+        <p>Height: {height}</p>
+        <p>Birth: {birth.toDateString()}</p>
       </div>
     </div>
   );

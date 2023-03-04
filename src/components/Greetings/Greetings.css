@@ -1,0 +1,7 @@
+.greeting {
+  width: 50%;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-size: 1rem;
+}

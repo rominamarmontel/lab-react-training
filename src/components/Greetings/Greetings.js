@@ -1,10 +1,12 @@
 import React from 'react';
+import './Greetings.css';
 
-const Greetings = ({ lang }) => {
+const Greetings = (props) => {
+  const { lang, children } = props;
   return (
-    <div>
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+    <div className="greeting">
+      {lang === 'de' && <p>Hello! {children}</p>}
+      {lang === 'fr' && <p>Bonjour! {children}</p>}
     </div>
   );
 };
